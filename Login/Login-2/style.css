@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;600;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #94cbf0, #0b024e);
+}
+
+.container {
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 5px;
+    background: #ffffff;
+    width: 35%;
+    min-width: 250px;
+}
+
+.content-input {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    position: relative;
+
+    input {
+        outline: none;
+        border-bottom: 3px solid #999797;
+        transition: 0.5s;
+        padding-left: 30px;
+    }
+
+    input:focus {
+        border-bottom: 3px solid #0b024e7e;
+    }
+
+    svg {
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        bottom: 14px;
+        fill: #999797;
+        transition: 0.5s;
+    }
+
+    input:focus svg {
+        fill: #000000db !important;
+    }
+}
+
+input,
+button {
+    border: none;
+    padding: 10px;
+}
+
+label {
+    margin: 10px;
+    font-size: 14px;
+}
+
+.annexe span {
+    float: right;
+    margin-bottom:20px;
+    font-size: small;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    background: #0b024e7e;
+    color: rgb(219, 219, 220);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background: #0b024e;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.logo-social {
+    display: block;
+
+    .content-icone {
+        margin: 20px 5px;
+    }
+
+    .icone {
+        margin: auto 8px;
+
+        svg {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            transition: 0.3s;
+        }
+
+        svg:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .icone-fb svg {
+        fill: #1977f3;
+        width: 30px;
+        height: 30px;
+    }
+
+    .icone-google svg {
+        background-color: #f31919;
+        fill: #ffffff;
+        padding: 7px;
+    }
+
+    .icone-x svg {
+        padding: 7px;
+        fill: #ffffff;
+        background-color: #000000;
+    }
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    .bout{
+        font-size: 14px;
+    }
+    a {
+        margin: 10px 0;
+        font-weight: 700;
+    }
+}
